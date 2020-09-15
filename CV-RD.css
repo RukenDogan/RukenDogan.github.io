@@ -1,0 +1,258 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,300,500,200);
+/*@import url(https://fonts.googleapis.com/css?family=Playfair+Display);
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Molengo&display=swap');
+
+*
+{
+	margin: 0;
+	padding: 0;
+  list-style: none;
+  box-sizing: border-box;
+  font-family: 'Raleway';
+}
+
+body 
+{
+  background-color: #efefef;
+}
+
+.paper
+{
+  display: flex;
+  width: 800px;
+  /*height: 950px;*/
+  margin: 40px auto;
+  box-shadow: 0 0 9px rgba(0,0,0,.6);
+  background-color: white;
+  border: solid 11px #a3d2ca;
+
+}
+
+.paper:hover
+{
+  box-shadow: 0 0 9px rgba(0,0,0,.45);
+}
+
+
+
+/* PARTIE GAUCHE */
+.photord img
+{
+  width: 155px;
+  border-radius: 155px;
+  border: solid 3px white;
+  margin: 15px 0px 45px 30px ;
+}
+
+.name
+{
+  margin: 0 0 200px 0px;
+  font-size: 23px;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.r
+{
+  border-top: 1px solid white;
+  margin-right: 7px;
+  animation : name 3s ease-in-out 0s forwards;
+}
+
+.d
+{
+  border-bottom: 1px solid white;
+    animation : name 3s ease-in-out 0s forwards;
+}
+
+.left
+{
+  width: 250px;
+  border-right: solid 1px #a3d2ca;
+  /*padding: 0 20px;*/
+  padding: 9px;
+  background: linear-gradient(167deg, #a3d2ca 33%, white 33%);
+}
+
+.title
+{
+  font-size: 20px;
+  text-transform: uppercase;
+  text-decoration: underline overline;
+  text-align: center;
+  /*letter-spacing: 9px;*/
+  margin-bottom: 30px;
+  animation : title 3s ease-in-out 0s forwards;
+}
+
+/* Alignement icones et textes*/
+.infobox
+{
+  display: flex;
+  align-items: center;
+}
+
+.infobox img
+{
+  width: 30px;
+  height: 30px;
+  margin: 10px 7px 10px 4px;
+}
+
+.infobox p
+{
+  font-size: 14px;
+}
+
+.button1, .button2
+{
+  text-decoration: none;
+  font-weight: normal;
+  border-radius: 3px;
+  border: solid 1px black;
+  color: black;
+  width: 100px;
+  font-size: 15px;
+  padding: 10px;
+  text-align: center;
+  border: solid 1px black;
+}
+
+
+.buttonwrapper
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.button1
+{
+ margin: 60px 0 10px 0;
+}
+
+
+a:hover
+{
+  border: solid 1px #a3d2ca;
+  background-color: #a3d2ca;
+  color: white;
+  font-weight: bold;
+}
+
+
+
+
+
+/* PATRIE DROITE */
+
+.right
+{
+  width: calc(100% - 250px);
+  margin: 10px;
+}
+
+.competences
+{
+  padding-left: 25px;
+  text-align: justify;
+}
+
+
+.competences, .experience, .formation
+{
+  font-size: 0.85em;
+}
+
+
+ul 
+{
+  list-style: none;
+}
+
+ul li::before 
+{
+  content: "\2022";
+  color: #5aae9f;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em; 
+  margin-left: -1em;
+  margin-top: 5px;
+}
+
+
+.content1
+{
+  display: flex;
+  align-items: center;
+  margin: 10px;
+}
+
+.date
+{
+  width: 160px;
+  font-weight: bold;
+  color: #5aae9f;
+}
+
+.info
+{
+  width: calc(100% - 160px);
+  padding-left: 25px;
+/*position: relative;*/
+
+}
+
+.heading
+{
+  font-weight: bold;
+  display: inline;
+  color: #5aae9f;
+}
+
+
+.experience, .formation
+{
+  margin-top: 50px;
+}
+
+
+
+
+@keyframes name
+{
+0%
+  {
+   letter-spacing : 0px;
+  }
+100%
+  {
+   letter-spacing : 4px;
+  }
+}
+
+@keyframes title
+{
+0%
+  {
+   letter-spacing : 0px;
+  }
+100%
+  {
+   letter-spacing : 9px;
+  }
+}
+
+
+/* VERSION PETIT ECRAN */
+@media screen and (max-width: 950px)
+{
+  .papier
+  {
+  width: 400px;
+  height: 650px;
+  }
+}
