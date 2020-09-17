@@ -106,7 +106,7 @@ body
   font-size: 14px;
 }
 
-.button1, .button2
+.button1, .button2, .button3
 {
   text-decoration: none;
   font-weight: normal;
@@ -118,6 +118,12 @@ body
   padding: 10px;
   text-align: center;
   border: solid 1px black;
+}
+
+.button3
+{
+  width: 200px;
+  margin-top: 50px;
 }
 
 
