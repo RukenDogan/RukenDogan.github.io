@@ -185,7 +185,7 @@ ul li::before
   font-weight: bold;
   display: inline-block;
   width: 1em; 
-  margin-left: -1em;
+  margin-left: -1.5em;
   margin-top: 5px;
 }
 
@@ -220,12 +220,16 @@ ul li::before
 }
 
 
-.experience, .formation
+.formation, .autodidacte
 {
   margin-top: 50px;
 }
 
 
+.experience
+{
+  margin-top: 10px;
+}
 
 
 @keyframes name
