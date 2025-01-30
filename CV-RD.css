@@ -120,7 +120,7 @@ body
   border: solid 1px black;
 }
 
-.button3, .button4
+.button3,
 {
   width: 200px;
   margin-top: 50px;
@@ -134,7 +134,7 @@ body
   align-items: center;
 }
 
-.button1
+.button1, .button4
 {
  margin: 60px 0 10px 0;
 }
